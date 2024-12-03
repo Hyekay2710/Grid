@@ -1,0 +1,221 @@
+*{
+    border: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(185, 207, 200);
+}
+body .container{
+    height: 500px
+}
+.container{
+    display: grid;
+    gap: 10px;
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+     grid-template-areas: 
+    'header header navigation maincontent'
+    'sidebar footer footer maincontent'
+    ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 50fr 150fr 50fr; 
+}
+.header{
+    background-color: rgb(92, 61, 141);
+    padding: 30px;
+    border-radius: 5px;
+    color: whitesmoke;
+    grid-area: header;
+    font-size: 15px;
+    /* border: rgb(248, 249, 250) 3px solid; */
+}
+.navigation{
+    background-color: rgb(84, 84, 85);
+    padding: 30px;
+    color: whitesmoke;
+    border-radius: 5px;
+    grid-area: navigation;
+    /* border: rgb(237, 241, 243) 3px solid; */
+}
+.maincontent{
+    background-color: rgb(239, 236, 243);
+    padding: 30px;
+    grid-area: maincontent;
+    border-radius: 5px;
+    color: rgb(8, 8, 8);
+    width: 200px;
+    /* border: rgb(235, 237, 238) 3px solid; */
+}
+
+.sidebar{
+    background-color: rgb(239, 236, 243);
+    padding: 30px;
+    color: rgb(8, 8, 8);
+    grid-area: sidebar;
+    border-radius: 5px;
+    /* border: rgb(235, 237, 238) 3px solid; */
+}
+.footer{
+    background-color: rgb(9, 9, 65);
+    padding: 30px;
+    color: whitesmoke;
+    border-radius: 5px;
+    grid-area: footer;
+    /* border: rgb(237, 241, 243) 3px solid; */
+}
+.header img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+.header h2{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell;
+    font-size: small;
+}
+.header .logo{
+    display: flex;
+    font-size: 5px;
+}
+.header .logo h1{
+    padding: 10px;
+    font-size: 10px;
+}
+.header .logo h1 p{
+    font-size: 7px;
+    color: rgb(100, 135, 146);
+}
+.header h3{
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgb(120, 123, 124);
+}
+.navigation img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.navigation h2{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell;
+    font-size: small;
+}
+.navigation .logo{
+    display: flex;
+    font-size: 5px;
+}
+
+.navigation .logo h1{
+    padding: 10px;
+    font-size: 10px;
+}
+
+.navigation .logo h1 p{
+    font-size: 7px;
+    color: rgb(180, 192, 196);
+}
+
+.navigation h3{
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgb(146, 163, 168);
+}
+.maincontent img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.maincontent h2{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell;
+    font-size: small;
+}
+.maincontent .logo{
+    display: flex;
+    font-size: 5px;
+}
+.maincontent .logo h1{
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+.maincontent .logo h1 p{
+    font-size: 7px;
+    color: rgb(180, 192, 196);
+}
+.maincontent h3{
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgb(146, 163, 168);
+}
+.sidebar img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.sidebar h2{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell;
+    font-size: small;
+}
+.sidebar .logo{
+    display: flex;
+    font-size: 5px;
+}
+.sidebar .logo h1{
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+.sidebar .logo h1 p{
+    font-size: 7px;
+    color: rgb(180, 192, 196);
+}
+.sidebar h3{
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgb(146, 163, 168);
+}
+.footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.footer h2{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell;
+    font-size: small;
+}
+.footer .logo{
+    display: flex;
+    font-size: 5px;
+}
+.footer .logo h1{
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+.footer .logo h1 p{
+    font-size: 7px;
+    color: rgb(180, 192, 196);
+}
+.footer h3{
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgb(146, 163, 168);
+}
+@media (max-width: 500px){
+    
+   body{
+    grid-template-areas: 
+    'header'
+    'navigation'
+    'sidebar'
+    'footer'
+    'maincontent'
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 70px 1fr 120px 70pxr; 
+   }
+}
